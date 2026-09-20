@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ABDOU CARTHAGE RENT A CAR : location de voitures à Tanger, Maroc.">
+  <title>ABDOU CARTHAGE RENT A CAR | Tanger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <div class="topbar">
+    <span class="status-dot" aria-hidden="true"></span>
+    <span>Service local à Tanger · Réservation simple et transparente</span>
+    <a href="#booking">Réserver maintenant <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ABDOU CARTHAGE RENT A CAR, accueil">
+      <span class="brand-mark">AC</span>
+      <span class="brand-name"><strong>ABDOU</strong><small>CARTHAGE RENT A CAR</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="#fleet">Notre flotte</a>
+      <a href="#advantages">Avantages</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-button" href="#booking">Réserver <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" type="button" aria-controls="main-nav" aria-expanded="false" hidden>Menu</button>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero section-shell" id="top">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> Votre mobilité, notre signature</p>
+        <h1>La route vous<br><em>appartient.</em></h1>
+        <p class="hero-text">Des voitures fiables, des prix clairs et une équipe locale à vos côtés pour explorer Tanger et tout le Maroc en toute liberté.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#booking">Choisir mon véhicule <span aria-hidden="true">↗</span></a>
+          <a class="under-link" href="#fleet">Découvrir la flotte <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="review-line" aria-label="Note moyenne 4,9 sur 5">
+          <div class="review-avatars" aria-hidden="true"><span>Y</span><span>N</span><span>A</span><span>+</span></div>
+          <p><strong>4,9/5</strong><small>avis de nos clients</small></p>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://apiv2.autonews.ma/wp-content/uploads/2026/01/dacia-logan-2026-exterieur-face-avant-autonews-020.jpg" alt="Dacia Logan 2026" fetchpriority="high">
+        <div class="media-shade" aria-hidden="true"></div>
+        <div class="round-badge"><span>✦</span><strong>100%</strong><small>liberté</small></div>
+        <div class="location-badge"><span class="location-icon" aria-hidden="true">⌖</span><span><small>Votre prochaine escale</small><strong>Tanger, Maroc</strong></span></div>
+      </div>
+    </section>
+
+    <section class="booking-card" id="booking" aria-labelledby="booking-title">
+      <div class="booking-intro">
+        <span class="booking-symbol" aria-hidden="true">⌁</span>
+        <div><h2 id="booking-title">Estimez votre location</h2><p>Une estimation immédiate, sans engagement.</p></div>
+      </div>
+      <form class="booking-form" id="booking-form" aria-describedby="form-message">
+        <label>Lieu de retrait
+          <span class="field"><span aria-hidden="true">⌖</span><input id="pickup" name="pickup" value="Tanger — Agence centre" required></span>
+        </label>
+        <label>Date de départ
+          <span class="field"><span aria-hidden="true">▣</span><input id="start-date" name="start-date" type="date" required></span>
+        </label>
+        <label>Date de retour
+          <span class="field"><span aria-hidden="true">▣</span><input id="end-date" name="end-date" type="date" required></span>
+        </label>
+        <label>Véhicule
+          <span class="field"><span aria-hidden="true">▱</span><select id="car-select" name="car-select"><option value="logan" data-price="350">Dacia Logan · 350 DH</option><option value="stepway" data-price="390">Dacia Stepway · 390 DH</option><option value="duster" data-price="490">Dacia Duster · 490 DH</option><option value="clio" data-price="390">Renault Clio 5 · 390 DH</option><option value="byd" data-price="950">BYD Seal U · 950 DH</option><option value="accent" data-price="420">Hyundai Accent · 420 DH</option><option value="sportage" data-price="790">Kia Sportage · 790 DH</option><option value="peugeot" data-price="450">Peugeot 208 · 450 DH</option></select></span>
+        </label>
+        <button class="button button-orange" type="submit">Calculer <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="form-message" id="form-message" role="status" aria-atomic="true"></p>
+    </section>
+
+    <section class="section-shell fleet-section" id="fleet" aria-labelledby="fleet-title">
+      <div class="section-heading">
+        <div><p class="kicker"><span></span> Une voiture pour chaque aventure</p><h2 id="fleet-title">Choisissez votre <em>alliée.</em></h2></div>
+        <div class="filters" role="group" aria-label="Filtrer la flotte">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">Tout</button>
+          <button class="filter" type="button" data-filter="city" aria-pressed="false">Citadines</button>
+          <button class="filter" type="button" data-filter="suv" aria-pressed="false">SUV</button>
+          <button class="filter" type="button" data-filter="premium" aria-pressed="false">Premium</button>
+        </div>
+      </div>
+
+      <div class="fleet-grid">
+        <article class="car-card" data-category="city">
+          <div class="car-photo"><img src="https://www.wandaloo.com/files/Voiture-Neuve/dacia/DACIA-Logan-2021-Neuve-Maroc-01.jpg" alt="Dacia Logan berline" loading="lazy"><span class="availability">Disponible</span><button class="favorite" type="button" aria-label="Favori : Dacia Logan" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">Berline économique · Manuelle</p><h3>Dacia Logan</h3></div><p class="car-price"><strong>350 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Manuelle</span><span>5 places</span><span>4 portes</span></div>
+        </article>
+        <article class="car-card" data-category="city">
+          <div class="car-photo"><img src="https://www.wandaloo.com/files/Voiture-Neuve/dacia/Dacia-Sandero-Stepway-2016-neuve-Maroc-01.jpg" alt="Dacia Sandero Stepway crossover" loading="lazy"><span class="availability">Disponible</span><button class="favorite" type="button" aria-label="Favori : Dacia Stepway" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">Crossover · Manuelle</p><h3>Dacia Stepway</h3></div><p class="car-price"><strong>390 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Manuelle</span><span>5 places</span><span>5 portes</span></div>
+        </article>
+        <article class="car-card" data-category="suv">
+          <div class="car-photo"><img src="https://www.wandaloo.com/files/Voiture-Neuve/dacia/DACIA-Duster-2022-Neuve-Maroc-01.jpg" alt="Dacia Duster SUV" loading="lazy"><span class="availability">Disponible</span><button class="favorite" type="button" aria-label="Favori : Dacia Duster" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">SUV · Manuelle</p><h3>Dacia Duster</h3></div><p class="car-price"><strong>490 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Manuelle</span><span>5 places</span><span>5 portes</span></div>
+        </article>
+        <article class="car-card" data-category="city">
+          <div class="car-photo"><img src="https://www.wandaloo.com/files/2019/06/Renault-Clio-2020-Neuve-Maroc-02.jpg" alt="Renault Clio 5 citadine" loading="lazy"><span class="availability">Disponible</span><button class="favorite" type="button" aria-label="Favori : Renault Clio 5" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">Citadine · Automatique</p><h3>Renault Clio 5</h3></div><p class="car-price"><strong>390 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Automatique</span><span>5 places</span><span>5 portes</span></div>
+        </article>
+        <article class="car-card" data-category="premium">
+          <div class="car-photo car-photo--full"><img src="BYD-SEAL-U-clean.png" width="1536" height="1024" alt="BYD Seal U SUV hybride rechargeable" loading="lazy"><span class="availability">Sur réservation</span><button class="favorite" type="button" aria-label="Favori : BYD Seal U" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">SUV hybride · Automatique</p><h3>BYD Seal U</h3></div><p class="car-price"><strong>950 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Automatique</span><span>5 places</span><span>5 portes</span></div>
+        </article>
+        <article class="car-card" data-category="city">
+          <div class="car-photo"><img src="https://www.wandaloo.com/files/Voiture-Neuve/hyundai/HYUNDAI-Accent-2021-Facelift-Neuve-Maroc-02.jpg" alt="Hyundai Accent berline" loading="lazy"><span class="availability">Disponible</span><button class="favorite" type="button" aria-label="Favori : Hyundai Accent" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">Berline · Automatique</p><h3>Hyundai Accent</h3></div><p class="car-price"><strong>420 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Automatique</span><span>5 places</span><span>4 portes</span></div>
+        </article>
+        <article class="car-card" data-category="suv">
+          <div class="car-photo"><img src="https://www.wandaloo.com/files/Voiture-Neuve/kia/KIA-Sportage-2025-Neuve-Maroc-13.jpg" alt="Kia Sportage SUV" loading="lazy"><span class="availability">Disponible</span><button class="favorite" type="button" aria-label="Favori : Kia Sportage" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">SUV · Automatique</p><h3>Kia Sportage</h3></div><p class="car-price"><strong>790 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Automatique</span><span>5 places</span><span>5 portes</span></div>
+        </article>
+        <article class="car-card" data-category="city">
+          <div class="car-photo"><img src="https://www.wandaloo.com/files/Voiture-Neuve/peugeot/PEUGEOT-208-2024-Neuve-Maroc-06.jpg" alt="Peugeot 208 compacte" loading="lazy"><span class="availability">Disponible</span><button class="favorite" type="button" aria-label="Favori : Peugeot 208" aria-pressed="false">♡</button></div>
+          <div class="car-details"><div><p class="car-category">Citadine · Automatique</p><h3>Peugeot 208</h3></div><p class="car-price"><strong>450 DH</strong><small>/ jour</small></p></div>
+          <div class="car-specs"><span>Automatique</span><span>5 places</span><span>5 portes</span></div>
+        </article>
+      </div>
+      <p class="price-note">Tarifs indicatifs à partir de, en DH/jour, selon la saison et la durée. Confirmation au moment de la réservation.</p>
+    </section>
+
+    <section class="advantages-section" id="advantages" aria-labelledby="advantages-title">
+      <div class="section-shell advantages-grid">
+        <div class="advantages-copy"><p class="kicker kicker-light"><span></span> La différence Abdou Carthage</p><h2 id="advantages-title">Le voyage commence<br><em>avant le départ.</em></h2><p>Du premier clic au dernier kilomètre, nous faisons de chaque location une expérience simple, humaine et fiable.</p><a class="button button-light" href="#contact">Découvrir notre approche <span aria-hidden="true">↗</span></a></div>
+        <div class="advantage-list">
+          <div class="advantage"><span>01</span><div><h3>Des véhicules impeccables</h3><p>Contrôlés et entretenus avant chaque départ.</p></div></div>
+          <div class="advantage"><span>02</span><div><h3>Une flexibilité totale</h3><p>Des horaires et lieux de livraison adaptés à votre rythme.</p></div></div>
+          <div class="advantage"><span>03</span><div><h3>Un service humain</h3><p>Une équipe locale disponible et à votre écoute.</p></div></div>
+          <div class="advantage"><span>04</span><div><h3>Des prix transparents</h3><p>Pas de frais cachés. Ce que vous voyez est ce que vous payez.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell story-section" id="about" aria-labelledby="about-title">
+      <div class="story-photo"><img src="BYD-SEAL-U-clean.png" alt="BYD Seal U" width="1536" height="1024" loading="lazy"><span>Depuis Tanger<br><strong>avec passion</strong></span></div>
+      <div class="story-copy"><p class="kicker"><span></span> Notre histoire</p><h2 id="about-title">Une équipe locale,<br><em>un regard ouvert.</em></h2><p>ABDOU CARTHAGE RENT A CAR est née à Tanger avec une conviction : louer une voiture doit être aussi agréable que le voyage qui suit.</p><p>Nous connaissons les routes, les détours et les endroits qui rendent le Maroc inoubliable. Laissez-nous vous aider à les découvrir.</p><a class="under-link" href="#contact">Parler à notre équipe <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div><p class="kicker"><span></span> Parlons de votre prochain départ</p><h2 id="contact-title">Prêt à prendre<br><em>la route ?</em></h2></div>
+      <div class="contact-copy"><p>Une question, une envie, un itinéraire à imaginer ?<br>Notre équipe vous répond avec plaisir.</p><a class="contact-link" href="mailto:contact@abdoucarthage.ma"><span aria-hidden="true">✉</span> contact@abdoucarthage.ma <strong aria-hidden="true">→</strong></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand" href="#top" aria-label="Retour à l'accueil"><span class="brand-mark">AC</span><span class="brand-name"><strong>ABDOU</strong><small>CARTHAGE RENT A CAR</small></span></a>
+      <div class="footer-address"><p>84, Boulevard Mohammed V, 1er étage, N° 1a<br>Tanger-Médina, Tanger — Maroc</p><p><strong>ICE</strong> 001597536000003 · <strong>RC</strong> 36267 · <strong>IF</strong> 36267</p></div>
+    </div>
+    <div class="privacy-copy">Les informations de réservation sont utilisées uniquement pour répondre à votre demande et ne sont pas revendues.</div>
+    <div class="footer-bottom"><span>© 2026 ABDOU CARTHAGE RENT A CAR. Tous droits réservés.</span><a href="privacy-policy.html">Politique de confidentialité</a><span>SARL · LOCATION DE VEHICULES SANS CHAUFFEURS</span></div>
+  </footer>
+
+</body>
+</html>
